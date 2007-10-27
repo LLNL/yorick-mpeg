@@ -1,5 +1,5 @@
 /*
- * ympeg.c -- $Id: ympeg.c,v 1.1 2007-10-27 22:18:21 dhmunro Exp $
+ * ympeg.c -- $Id: ympeg.c,v 1.1.1.1 2007-10-27 22:18:21 dhmunro Exp $
  * mpeg encoding interface for yorick
  */
 

@@ -1,5 +1,5 @@
 /*
- * mpgtest.i -- $Id: mpgtest.i,v 1.1 2007-10-27 22:18:21 dhmunro Exp $
+ * mpgtest.i -- $Id: mpgtest.i,v 1.1.1.1 2007-10-27 22:18:21 dhmunro Exp $
  * test yorick mpeg encoder
  */
 require, "mpeg.i";

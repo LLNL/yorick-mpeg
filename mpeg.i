@@ -1,5 +1,5 @@
 /*
- * mpeg.i -- $Id: mpeg.i,v 1.1 2007-10-27 22:18:21 dhmunro Exp $
+ * mpeg.i -- $Id: mpeg.i,v 1.1.1.1 2007-10-27 22:18:21 dhmunro Exp $
  * yorick interface to mpeg movie encoding
  * 
  */
