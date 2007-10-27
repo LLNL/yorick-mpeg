@@ -1,0 +1,15 @@
+This is a standalone mpeg movie encoder for yorick, intended to
+replace the mpeg encoder in the yorick-z package, which requires the
+ffmpeg package.  The libavcodec directory contains a version of ffmpeg
+0.4.9-pre1 which has been stripped of everything except MPEG-1
+encoding.  See the libavcodec subdirectory README for more, and the
+ffmpeg web pages:
+
+http://ffmpeg.mplayerhq.hu/
+http://sourceforge.net/projects/ffmpeg/
+
+This package is not very complete, and you will probably have to
+configure libavcodec/Makefile by hand.  It can be made to run on both
+Linux and Mac OS X platforms, but I have had much less success
+elsewhere.  In particular, it does not seem to run correctly under
+Windows or on AIX SP machines.

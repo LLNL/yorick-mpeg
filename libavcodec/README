@@ -1,0 +1,33 @@
+This code began as part of the ffmpeg package.  I have left the
+copyright notices and source file names unchanged, but they bear only
+a limited resemblance to the original.  Mostly, I have ripped out
+coding that was intended to optimize the original for speed, and to
+support anything other than encoding MPEG-1 format video, which is to
+say almost all of ffmpeg is missing.  My goals have been completely
+orthogonal to those of the ffmpeg authors.  I have to support yorick
+on a wide variety of platforms, and I was unable to get ffmpeg to
+build on many of them.  I'm sure if I had been willing to do things
+like build gcc in order to be able to build ffmpeg, I might have been
+able to coax it to build on a few more systems.  I only have a passing
+interest in performance; anything within a factor of two of what
+ffmpeg achieves is easily good enough.  However, I need the code to be
+absolutely portable and stable.  The interface to ffmpeg was still
+changing as of 0.4.9-pre1 enough to require rewriting any code which
+called it in order to support newer versions (to allow for changes in
+structs and so on).  Eventually, I would like to move away from the
+ffmpeg avcodec.h API to something much smaller, but I haven't
+attempted that yet.  Originally, I intended to make it so that the
+caller (ympeg.c in this case) would have the option of linking against
+the real ffmpeg shared library instead of this stripped version, but
+even that limited portability is impossible when the avcodec.h API
+changes incompatibly as new version are released.
+
+In its current state, this library builds and works correctly on
+pretty much the same paltforms where I can get ffmpeg to compile and
+work, so I haven't really gained anything at all by the exercise,
+except for independence from changes in ffmpeg on those platforms.
+
+In short, this still doesn't work, and needs lots more work.
+
+Dave Munro
+27/Oct/2007
