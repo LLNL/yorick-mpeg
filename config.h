@@ -10,6 +10,6 @@
 #define ARCH_X86 1
 
 /* used in mem.c, almost certainly should eliminate */
+#undef HAVE_OSX
 #define HAVE_MALLOC_H 1
 #define HAVE_MEMALIGN 1
-#define HAVE_OSX 0
