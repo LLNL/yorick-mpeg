@@ -30,6 +30,10 @@
 #undef realloc
 
 #ifdef HAVE_MALLOC_H
+#ifdef HAVE_OSX
+#include <malloc/malloc.h>
+#define memalign(align,size) malloc (size)
+#else
 #include <malloc.h>
 #endif
 
