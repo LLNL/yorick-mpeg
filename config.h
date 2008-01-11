@@ -12,4 +12,4 @@
 /* used in mem.c, almost certainly should eliminate */
 #define HAVE_MALLOC_H 1
 #define HAVE_MEMALIGN 1
-#define HAVE_OSX 1
+#define HAVE_OSX 0
